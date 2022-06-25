@@ -1,0 +1,92 @@
+.win {
+    position: relative;
+    z-index: 1;
+    box-shadow: 
+        0 0 0 0px hsla(0, 0%, 50%, 0.01),
+        0 0 0 0px hsla(0, 0%, 60%, 0.03),
+        0 0 0 0px hsla(0, 0%, 70%, 0.05),
+        0 0 0 0px hsla(0, 0%, 80%, 0.07),
+        0 0 0 0px hsla(0, 0%, 90%, 0.09);
+    animation-name: winAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes winAnimation {
+    0% {
+        box-shadow: 
+        0 0 0 0px hsla(0, 0%, 50%, 0.01),
+        0 0 0 0px hsla(0, 0%, 60%, 0.03),
+        0 0 0 0px hsla(0, 0%, 70%, 0.05),
+        0 0 0 0px hsla(0, 0%, 80%, 0.07),
+        0 0 0 0px hsla(0, 0%, 90%, 0.09);
+    }
+    50% {
+        box-shadow: 
+        0 0 0 15px hsla(0, 0%, 50%, 0.01),
+        0 0 0 30px hsla(0, 0%, 60%, 0.03),
+        0 0 0 45px hsla(0, 0%, 70%, 0.05),
+        0 0 0 60px hsla(0, 0%, 80%, 0.07),
+        0 0 0 75px hsla(0, 0%, 90%, 0.09);
+    }
+    100%{
+        box-shadow: 
+        0 0 0 0px hsla(0, 0%, 50%, 0.01),
+        0 0 0 0px hsla(0, 0%, 60%, 0.03),
+        0 0 0 0px hsla(0, 0%, 70%, 0.05),
+        0 0 0 0px hsla(0, 0%, 80%, 0.07),
+        0 0 0 0px hsla(0, 0%, 90%, 0.09);
+    }
+  }
+
+  .loading {
+    position: relative;
+    z-index: 1;
+    border-width: 15px;
+    border-top-color: #dc3b56;
+    border-bottom-color: #4bb8d0;
+    border-left-color: #4f6ef6;
+    border-right-color: #eba420;
+    transform: rotate(0deg);
+    animation-name: loadingAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes loadingAnimation {
+    0% {
+        border-top-color: #dc3b56;
+        border-bottom-color: #4bb8d0;
+        border-left-color: #4f6ef6;
+        border-right-color: #eba420;
+        transform: rotate(45deg);
+    }
+    25% {
+        border-top-color: #8b58e5;
+        border-bottom-color: #dc3b56;
+        border-left-color: #4bb8d0;
+        border-right-color: #4f6ef6;
+        transform: rotate(90deg);
+    }
+    50%{
+        border-top-color: #eba420;
+        border-bottom-color: #8b58e5;
+        border-left-color: #dc3b56;
+        border-right-color: #4bb8d0;
+        transform: rotate(135deg);
+    }
+    75%{
+        border-top-color: #4f6ef6;
+        border-bottom-color: #eba420;;
+        border-left-color: #8b58e5;
+        border-right-color: #dc3b56;
+        transform: rotate(180deg);
+    }
+    100%{
+        border-top-color: #4bb8d0;
+        border-bottom-color: #4f6ef6;
+        border-left-color: #eba420;
+        border-right-color: #8b58e5;
+        transform: rotate(225deg);
+    }
+  }
